@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "weiwork"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "weiwork is a sample framework for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -105,7 +105,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource  = "weiwork.framework/WeiWorkResource.bundle"
+  spec.resource  = "weiworkFramework/weiwork.framework/WeiWorkResource.bundle"
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
@@ -118,6 +118,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
+  spec.ios.vendored_frameworks = 'weiworkFramework/weiwork.framework'
   # spec.framework  = "SomeFramework"
   spec.frameworks = "WebKit", "Security"
 

@@ -1,0 +1,6 @@
+framework module weiwork {
+  umbrella header "weiwork.h"
+
+  export *
+  module * { export * }
+}
